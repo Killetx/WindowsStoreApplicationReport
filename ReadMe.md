@@ -1,5 +1,5 @@
 The purpose of this project is a script that can be mass ran on multiple machines, and report back to a node.js backend.
-This was used in mass thanks to "ManageEngine/EndpointCentral"
+This was used in mass, thanks to "ManageEngine/EndpointCentral"
 Specifically, it will generate a JSON of every microsoft store application installed on a computer, and each individual version.
 See applications.json for an example output that has been somewhat obfuscated so that you can get the idea, but it doesn't leak anything.
 See log.txt for an example output form the node.js api. 
