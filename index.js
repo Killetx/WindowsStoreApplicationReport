@@ -28,12 +28,10 @@ app.post('/scriptReport', (req, res) => {
     console.log('Received request:', req.headers); //logs header of request
 
     if (req.headers.key != "KEY") { //this is a key check, should you desire the extra security. If you want, replace "KEY" with a secure string in both this line of text, and the Powershell Script
-        log("\n\n\n\n\nUNAUTHORIZED REQUEST RECEIVED ! ! ! !\n\n\n\n");
-        log("\n\n\n\n\nUNAUTHORIZED REQUEST RECEIVED ! ! ! !\n\n\n\n");
+        log("\n\n\n\n\nUNAUTHORIZED REQUEST RECEIVED ! ! ! !\n\n\n\n".repeat(3));
         log(req.body);
         log(req.headers);
-        log("\n\n\n\n\nUNAUTHORIZED REQUEST RECEIVED ! ! ! !\n\n\n\n");
-        log("\n\n\n\n\nUNAUTHORIZED REQUEST RECEIVED ! ! ! !\n\n\n\n");
+        log("\n\n\n\n\nUNAUTHORIZED REQUEST RECEIVED ! ! ! !\n\n\n\n".repeat(3));
     } else { 
  
 
